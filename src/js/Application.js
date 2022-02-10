@@ -10,6 +10,7 @@ export default class Application extends EventEmitter {
   constructor() {
     super();
     this.emojis = [];
+    this.food = [];
     this.banana = "🍌";
     this.emit(Application.events.READY);
   }
@@ -17,5 +18,10 @@ export default class Application extends EventEmitter {
     this.emojis = emojis;
   }
 
-  addBananas() {}
+  addBananas() {
+    const len = emojis.len();
+    for (let index = 0; index < len; index++) {
+      food[index].concat(this.banana);
+    }
+  }
 }
