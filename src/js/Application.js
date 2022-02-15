@@ -23,6 +23,6 @@ export default class Application extends EventEmitter {
   }
 
   addBananas() {
-    emojis = emojis.map((element) => element.concat(this.banana));
+    this.emojis = this.emojis.map((element) => element.concat(this.banana));
   }
 }
